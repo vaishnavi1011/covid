@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+    background: rgb(126, 179, 230);
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(92, 11, 11);
+    padding: 0 40px;
+    line-height: 80px;
+  
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+
+}
+nav li{
+    display: inline-block;
+    margin-right: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: rgb(29, 19, 19);
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+a.active,a:hover{
+    border: 2px solid rgb(59, 7, 179);
+    transition: 0.6s;
+    background-color: rgb(247, 247, 12);
+
+
+}
+nav #menu{
+    color:rgb(65, 23, 23);
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+@media (max-width:1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width:909px){
+    nav #menu{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(242, 153, 250);
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+    nav li{
+        display:block;
+        margin-right: 50px 0;
+        line-height: 30px;
+        padding-top: 40px;
+    
+
+    }
+    nav a{
+        font-size: 20px;
+       
+        
+    }
+    
+    
+    a.active,:hover{
+        /* padding:5px 5px; */
+        border:none;
+        font-weight: 900;
+        color: rgb(85, 7, 7);
+        
+        
+
+    }
+    nav ul.show{
+        left:0
+    }
+}
+.home{
+   
+    /* background:url(https://files.oyebesmartest.com/uploads/preview/pngtreerly.png)no-repeat; */
+    background:url(https://media.istockphoto.com/photos/coronavirus-theme-for-background-3d-illustration-new-sarscov2-global-picture-id1213597395?k=6&m=1213597395&s=170667a&w=0&h=qiTgkFoCRPM_qqL7pPIfnJHEdBNwy96-ZVvHA-RhDzA=);
+    background-size:1400px;
+    background-position:center;
+    background-attachment: fixed;
+    
+
+
+}
+.content{
+    min-height: 100vh;
+    padding: 1rem 9%;
+    padding-top: 8rem;
+    /* font-size: 30px; */
+    color:black;
+    opacity:1;
+
+}
+.content h1{
+    margin-top: 19rem;
+    font-size: var(--blue);
+    font-size: 4rem;
+}
+.content .btn{
+    display: inline-block;
+    padding-top: 7rem 3rem;
+    background:var(--blue);
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    font-size: 1.8rem;
+cursor:pointer;
+
+}
+ #btnn:hover{
+    background-color: #cc1bae;
+    
+    
+}

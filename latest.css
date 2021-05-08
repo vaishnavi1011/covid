@@ -1,0 +1,226 @@
+body{
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+}
+body:after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(126, 179, 230);
+    background-image: linear-gradient(rgb(48, 122, 231),rgb(126, 179, 230));
+    top: 0;
+    padding: 50px 50px;
+}
+body:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* background-color:rgb(212, 119, 224); */
+    top: 0;
+    /* background-image: cross-fade(red,black) */
+    background-color: pink;
+    padding: 50px 50px;
+    /* padding: 40px 40px; */
+}
+.container{
+    z-index:1;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 30px;
+    /* background: rgb(230, 170, 245); */
+    background-image: repeating-linear-gradient(rgb(218, 190, 221),red);
+    padding: 2%;
+    /* padding: 40px 40px; */
+    /* margin: 200px 1100px; */
+    
+    
+    }
+    .head{
+        text-align:center;
+        padding: 40px;
+        font-size: 30px;
+        margin-top: 100px;
+        font-family: cursive;
+        /* background-color: rgb(90, 171, 247); */
+        background-image: radial-gradient(rgb(31, 199, 241),pink,rgb(189,230,8),yellow);
+        margin-bottom: 50px;
+    }
+    .board{
+        column-count: 1;
+         column-gap:1rem;
+         /* margin: 80px 80px; */
+         /* background-color: ; */
+         /* background-image: linear-gradient(150deg,rgb(231, 93, 162),#226ddd); */
+         /* background-color:rgb(98, 185, 243); */
+         background-image: linear-gradient(rgb(114, 210, 240),rgb(15, 167, 238));
+
+         text-align: center;
+         padding: 0px;
+         font-size: 60px;
+     
+     }
+     /* .card{
+        width: 80%;
+        /* background: rgb(136, 189, 189); */
+        /* padding: 5%; */
+        /* height: 80px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        color: rgb(41, 11, 212);
+    }  */ 
+    /* .card.a{
+        background: yellow;
+    }
+    .card.cr{
+        background: rgb(17, 196, 77);
+    }
+    .card.r{
+        background: yellow;
+    }
+    .card.ca{
+        background: rgb(12, 209, 209);
+    }
+    .card.d{
+        background: rgb(202, 31, 236);
+    }
+    .card.t{
+        background: rgb(190, 10, 151);
+    } */
+#active{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 8px;
+    color: rgb(95, 28, 28);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function:linear;
+    
+}
+#active:hover{
+    font-size: 100px;
+    background-color: rgb(247, 8, 8);
+    color: black;
+    font-weight: 800;
+    padding: 40px;
+    border-radius: 200px;
+
+}
+#cases{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 8px;
+    color: rgb(95, 28, 28);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+#cases:hover{
+    font-size: 100px;
+    background-color: rgb(247, 8, 8);
+    color: black;
+    font-weight: 800;
+    border-radius: 200px;
+    padding: 40px;
+    
+}
+#critical{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 8px;
+    color: rgb(95, 28, 28);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+#critical:hover{
+    font-size: 100px;
+    background-color: rgb(247, 8, 8);
+    color: black;
+    padding: 40px;
+    font-weight: 800;
+    border-radius: 200px;
+    
+}
+#deaths{
+    cursor: pointer;
+    background-color:yellow;
+    border-radius: 8px;
+    color: rgb(95, 28, 28);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+#deaths:hover{
+    font-size: 100px;
+    padding: 40px;
+    background-color: rgb(247, 8, 8);
+    color: black;
+    font-weight: 800;
+    border-radius: 200px;
+    
+}
+#recovered{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 8px;
+    color: rgb(95, 28, 28);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+#recovered:hover{
+    font-size: 100px;
+    background-color: rgb(247, 8, 8);
+    padding: 40px;
+    color: black;
+    font-weight: 800;
+    border-radius: 200px;
+    
+}
+#active{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 8px;
+    color: rgb(95, 28, 28);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+#active:hover{
+    font-size: 100px;
+    background-color: rgb(247, 8, 8);
+    color: black;
+    padding: 40px;
+    font-weight: 800;
+    border-radius: 200px;
+    
+}
+#tests{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 8px;
+    color: rgb(95, 28, 28);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+    
+}
+#tests:hover{
+    font-size: 100px;
+    background-color: rgb(247, 8, 8);
+    color: black;
+    font-weight: 800;
+    border-radius: 200px;
+    padding: 40px;
+    }
+    
