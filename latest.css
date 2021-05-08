@@ -49,10 +49,12 @@ body{
         font-size: 30px;
         margin-top: 100px;
         font-family: cursive;
-        /* background-color: rgb(90, 171, 247); */
-        background-image: radial-gradient(rgb(57, 123, 245),pink);
+        /* background-color: rgb(90, 171, 247); 
+        background-image: radial-gradient(rgb(57, 123, 245),pink);*/
+        background-color: yellow;
         margin-bottom: 50px;
-        border:2px solid red; 
+        border:3px solid red; 
+        border-radius:3px;
     }
     .board{
         column-count: 1;
