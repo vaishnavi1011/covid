@@ -1,0 +1,43 @@
+body{
+    background-image: linear-gradient(rgb(181, 213, 240),white);
+}
+.head{
+    text-align: center;
+    color: blue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .box{
+    flex:1 1 30rem;
+    border-radius: 0.5rem;
+    margin: 1.5;
+    padding: 1rem;
+    text-align-last: center;
+
+}
+.container .box img{
+    height: 12rem;
+    padding: 1rem;
+}
+.box h3{
+    color:rgb(121, 10, 10) ;
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+.box p{
+    color:black ;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow:0 0.5rem 1rem;
+}
